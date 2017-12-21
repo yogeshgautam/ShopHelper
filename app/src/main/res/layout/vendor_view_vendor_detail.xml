@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/background"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Shop Helper"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:width="50dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/toolbar_color"
+        android:layout_toRightOf="@+id/imagebutton"
+        android:layout_toEndOf="@+id/imagebutton"
+        android:gravity="center_vertical" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="click_Back"
+        android:background="@color/toolbar_color"
+        android:id="@+id/imagebutton"
+        android:src="@drawable/back"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Profile"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button3"
+        android:background="@color/bottom"
+        android:layout_below="@id/imagebutton"
+        android:layout_alignParentRight="true"
+        android:onClick="click_viewProfile"
+        
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/button4"
+         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make New Transaction"
+        android:layout_marginTop="10dp"
+        android:id="@+id/button4"
+        android:onClick="click_makeNewTransaction"
+        android:background="@color/bottom"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/scroll_background"
+            android:id="@+id/listView48"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Paid:  0"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Received:0"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="\nTotal: 0"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView4"
+        android:textColor="#e26161"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

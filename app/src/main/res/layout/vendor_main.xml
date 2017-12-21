@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Shop Helper"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:width="50dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/toolbar_color"
+        android:layout_toRightOf="@+id/imagebutton"
+        android:layout_toEndOf="@+id/imagebutton"
+        android:gravity="center_vertical" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="click_Back"
+        android:background="@color/toolbar_color"
+        android:id="@+id/imagebutton"
+        android:src="@drawable/back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/background"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@color/bottom"
+        android:text="Add New Agent"
+        android:id="@+id/button_add_vender"
+        android:layout_alignParentTop="true"
+        android:onClick="click_vendor_new"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@color/bottom"
+        android:text="View All Agents"
+        android:onClick="click_vendor_view"
+        android:id="@+id/button_view_vendor"
+        android:layout_below="@+id/button_add_vender"
+        android:layout_alignLeft="@+id/button_add_vender"
+        android:layout_alignStart="@+id/button_add_vender"
+        android:layout_marginTop="52dp"
+        android:layout_alignRight="@+id/button_add_vender"
+        android:layout_alignEnd="@+id/button_add_vender" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
